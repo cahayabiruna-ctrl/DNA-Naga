@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA & Metode Kerja Tim Divi Naga Persada</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #D4AF37; /* Gold Accent */
+            --background-color: #121212; /* Very Dark Grey */
+            --card-background-color: #1E1E1E; /* Dark Grey */
+            --text-color: #E0E0E0; /* Light Grey Text */
+            --heading-color: #FFFFFF; /* White */
+            --shadow-color: rgba(212, 175, 55, 0.1);
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--card-background-color);
+            border-radius: 20px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+            padding: 2.5rem;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            font-family: var(--font-family);
+            color: var(--heading-color);
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+         header h2 {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            margin: 0.5rem 0 0;
+            font-weight: 300;
+            font-size: 1.3rem;
+        }
+
+        main {
+            padding: 2.5rem;
+        }
+
+        .audio-player-container {
+            margin-bottom: 2.5rem;
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-family: var(--font-family);
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+        }
+        
+        .section p {
+            font-size: 1rem;
+            color: #b0b0b0;
+        }
+
+        .timestamp-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timestamp-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .timestamp-list a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            background-color: transparent;
+            border-left: 3px solid transparent;
+        }
+        
+        .timestamp-list a:hover {
+            background-color: rgba(212, 175, 55, 0.05);
+            color: var(--primary-color);
+            transform: translateX(5px);
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .timestamp {
+            background-color: #333;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            margin-right: 1.2rem;
+            font-size: 0.9rem;
+            min-width: 65px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .timestamp-list a:hover .timestamp {
+             background-color: var(--primary-color);
+             color: var(--card-background-color);
+        }
+        
+        .sub-item {
+            margin-left: 2.5rem;
+            border-left: 1px dashed #444;
+            padding-left: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9em;
+            color: #777;
+            background-color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            header {
+                padding: 2rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+             header h2 {
+                font-size: 1.1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>DNA Sang Naga</h1>
+            <h2>Panduan Lengkap & Metode Kerja Profesional</h2>
+        </header>
+        
+        <main>
+            <div class="audio-player-container">
+                <audio id="trainingAudio" controls>
+                    <source src="pelDNAnaga.mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung elemen audio.
+                </audio>
+            </div>
+
+            <div class="section timestamp-list">
+                <h3 class="section-title">Navigasi Audio</h3>
+                <p>Klik pada judul untuk langsung melompat ke bagian yang relevan.</p>
+                <ul>
+                    <li><a href="#" onclick="seekAudio(81)"><span class="timestamp">01:21</span> Sesi 1: Fondasi di Balik Sang Naga</a></li>
+                    <ul class="sub-item">
+                        <li><a href="#" onclick="seekAudio(110)"><span class="timestamp">01:50</span> Fondasi #1: Konsultan, Bukan Perekrut</a></li>
+                        <li><a href="#" onclick="seekAudio(206)"><span class="timestamp">03:26</span> Fondasi #2: Bicara Pada Hati, Bukan Kepala</a></li>
+                        <li><a href="#" onclick="seekAudio(244)"><span class="timestamp">04:04</span> Fondasi #3: Kekuatan Duplikasi Sederhana</a></li>
+                    </ul>
+                    <li><a href="#" onclick="seekAudio(272)"><span class="timestamp">04:32</span> Sesi 2: Alur Percakapan Naga dalam Aksi</a></li>
+                     <ul class="sub-item">
+                        <li><a href="#" onclick="seekAudio(300)"><span class="timestamp">05:00</span> Langkah #1: Pembuka Pintu</a></li>
+                        <li><a href="#" onclick="seekAudio(315)"><span class="timestamp">05:15</span> Langkah #2: Filter Peminat</a></li>
+                        <li><a href="#" onclick="seekAudio(351)"><span class="timestamp">05:51</span> Langkah #3: Ledakan Rasa Penasaran (Cerita)</a></li>
+                        <li><a href="#" onclick="seekAudio(390)"><span class="timestamp">06:30</span> Langkah #4: Pivot Profesional</a></li>
+                        <li><a href="#" onclick="seekAudio(412)"><span class="timestamp">06:52</span> Langkah #5: Mengunci Komitmen & Closing</a></li>
+                    </ul>
+                    <li><a href="#" onclick="seekAudio(588)"><span class="timestamp">09:48</span> Sesi 3: Dari Anggota Baru Menjadi Ketua Tim</a></li>
+                     <ul class="sub-item">
+                        <li><a href="#" onclick="seekAudio(604)"><span class="timestamp">10:04</span> Misi 72 Jam Pertama</a></li>
+                        <li><a href="#" onclick="seekAudio(612)"><span class="timestamp">10:12</span> Sistem Pelatihan 3 Langkah</a></li>
+                        <li><a href="#" onclick="seekAudio(625)"><span class="timestamp">10:25</span> Prinsip Kemandirian & Kekuatan Pengakuan</a></li>
+                    </ul>
+                    <li><a href="#" onclick="seekAudio(645)"><span class="timestamp">10:45</span> Kesimpulan & Penutup</a></li>
+                    <li><a href="#" onclick="seekAudio(720)"><span class="timestamp">12:00</span> Hafalan Kalimat Kunci (Mantra Sakti)</a></li>
+                     <ul class="sub-item">
+                        <li><a href="#" onclick="seekAudio(738)"><span class="timestamp">12:18</span> Kalimat Pembuka & Filter</a></li>
+                        <li><a href="#" onclick="seekAudio(763)"><span class="timestamp">12:43</span> Sikap Bertemu Apel Hijau</a></li>
+                        <li><a href="#" onclick="seekAudio(767)"><span class="timestamp">12:47</span> Kalimat Pivot Profesional</a></li>
+                        <li><a href="#" onclick="seekAudio(784)"><span class="timestamp">13:04</span> Kalimat Mengunci Komitmen</a></li>
+                        <li><a href="#" onclick="seekAudio(832)"><span class="timestamp">13:52</span> Kalimat Pembuka Konsultasi</a></li>
+                        <li><a href="#" onclick="seekAudio(847)"><span class="timestamp">14:07</span> Kalimat Mengukur Kesiapan</a></li>
+                        <li><a href="#" onclick="seekAudio(881)"><span class="timestamp">14:41</span> Metode Mengatasi Keberatan</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Tim Divi Naga Persada. Sampai Jumpa di Puncak Kesuksesan.</p>
+        </footer>
+    </div>
+
+    <script>
+        function seekAudio(time) {
+            event.preventDefault(); 
+            const audioPlayer = document.getElementById('trainingAudio');
+            audioPlayer.currentTime = time;
+            audioPlayer.play();
+        }
+    </script>
+</body>
+</html>
