@@ -241,6 +241,22 @@
             audioPlayer.currentTime = time;
             audioPlayer.play();
         }
+
+        // --- KODE BARU UNTUK FULL SCREEN ---
+        function enterFullScreen() {
+            const elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        // Menambahkan listener untuk satu kali klik pertama saja
+        document.addEventListener('click', enterFullScreen, { once: true });
+        // --- AKHIR DARI KODE BARU ---
     </script>
 </body>
 </html>
