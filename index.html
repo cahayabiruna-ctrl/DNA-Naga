@@ -133,10 +133,9 @@
         .timestamp-list ul{list-style:none;padding:0; margin: 0;}
         .timestamp-list li{margin-bottom:.5rem}
 
-        /* --- PERUBAHAN UTAMA UNTUK PRESISI --- */
         .timestamp-list a {
-            display: flex; /* Mengaktifkan Flexbox */
-            align-items: center; /* Kunci untuk kesejajaran vertikal */
+            display: flex;
+            align-items: center;
             color: var(--text-color);
             text-decoration: none;
             font-weight: 400;
@@ -154,7 +153,7 @@
         }
 
         .timestamp {
-            flex-shrink: 0; /* Mencegah kotak timestamp mengecil */
+            flex-shrink: 0;
             background-color: #333;
             color: var(--primary-color);
             font-weight: 600;
@@ -212,36 +211,44 @@
                     <h3 class="section-title">Navigasi Audio</h3>
                     <p>Klik pada judul untuk langsung melompat ke bagian yang relevan.</p>
                     <ul>
-                        <li><a href="#" onclick="seekAudio(44)"><span class="timestamp">00:44</span> Sesi 1: Fondasi di Balik Sang Naga</a></li>
+                        <li><a href="#" onclick="seekAudio(63)"><span class="timestamp">01:03</span> Sesi 1: Fondasi di Balik Sang Naga</a></li>
                         <ul class="sub-item">
-                            <li><a href="#" onclick="seekAudio(74)"><span class="timestamp">01:14</span> Fondasi #1: Konsultan, Bukan Perekrut</a></li>
-                            <li><a href="#" onclick="seekAudio(127)"><span class="timestamp">02:07</span> Fondasi #2: Bicara Pada Hati, Bukan Kepala</a></li>
-                            <li><a href="#" onclick="seekAudio(167)"><span class="timestamp">02:47</span> Fondasi #3: Kekuatan Duplikasi Sederhana</a></li>
+                            <li><a href="#" onclick="seekAudio(77.5)"><span class="timestamp">01:17</span> Fondasi #1: Konsultan, Bukan Perekrut</a></li>
+                            <li><a href="#" onclick="seekAudio(142.9)"><span class="timestamp">02:22</span> Fondasi #2: Bicara Pada Hati</a></li>
+                            <li><a href="#" onclick="seekAudio(179.5)"><span class="timestamp">02:59</span> Fondasi #3: Kekuatan Duplikasi</a></li>
                         </ul>
-                        <li><a href="#" onclick="seekAudio(192)"><span class="timestamp">03:12</span> Sesi 2: Alur Percakapan Naga dalam Aksi</a></li>
+                        <li><a href="#" onclick="seekAudio(206.3)"><span class="timestamp">03:26</span> Sesi 2: Alur Percakapan Naga</a></li>
                          <ul class="sub-item">
-                            <li><a href="#" onclick="seekAudio(221)"><span class="timestamp">03:41</span> Langkah #1: Pembuka Pintu</a></li>
-                            <li><a href="#" onclick="seekAudio(232)"><span class="timestamp">03:52</span> Langkah #2: Filter Peminat</a></li>
-                            <li><a href="#" onclick="seekAudio(271)"><span class="timestamp">04:31</span> Langkah #3: Ledakan Rasa Penasaran (Cerita)</a></li>
-                            <li><a href="#" onclick="seekAudio(310)"><span class="timestamp">05:10</span> Langkah #4: Pivot Profesional</a></li>
-                            <li><a href="#" onclick="seekAudio(332)"><span class="timestamp">05:32</span> Langkah #5: Mengunci Komitmen & Closing</a></li>
+                            <li><a href="#" onclick="seekAudio(231.1)"><span class="timestamp">03:51</span> Langkah #1: Pembuka Pintu</a></li>
+                            <li><a href="#" onclick="seekAudio(247.8)"><span class="timestamp">04:07</span> Langkah #2: Filter Peminat</a></li>
+                            <li><a href="#" onclick="seekAudio(296.4)"><span class="timestamp">04:56</span> Langkah #3: Ledakan Rasa Penasaran</a></li>
+                            <li><a href="#" onclick="seekAudio(338.2)"><span class="timestamp">05:38</span> Langkah #4: Pivot Profesional</a></li>
+                            <li><a href="#" onclick="seekAudio(361.5)"><span class="timestamp">06:01</span> Langkah #5: Mengunci Komitmen</a></li>
+                            <li><a href="#" onclick="seekAudio(444.9)"><span class="timestamp">07:24</span> Langkah #6: Tahap Konsultasi</a></li>
                         </ul>
-                        <li><a href="#" onclick="seekAudio(509)"><span class="timestamp">08:29</span> Sesi 3: Dari Anggota Baru Menjadi Ketua Tim</a></li>
+                        <li><a href="#" onclick="seekAudio(517)"><span class="timestamp">08:37</span> Mengatasi Keberatan: Masalah Trauma</a></li>
+                        <li><a href="#" onclick="seekAudio(573.05)"><span class="timestamp">09:33</span> Mengatasi Keberatan: Tidak Punya Uang</a></li>
+                        <li><a href="#" onclick="seekAudio(603.4)"><span class="timestamp">10:03</span> Mengatasi Keberatan: Tidak Bisa Merekrut</a></li>
+                        <li><a href="#" onclick="seekAudio(624.8)"><span class="timestamp">10:24</span> Mengatasi Keberatan: Tidak Tertarik</a></li>
+                        <li><a href="#" onclick="seekAudio(639.2)"><span class="timestamp">10:39</span> Sesi 3: Dari Anggota Baru Menjadi Ketua Tim</a></li>
                          <ul class="sub-item">
-                            <li><a href="#" onclick="seekAudio(525)"><span class="timestamp">08:45</span> Misi 72 Jam Pertama</a></li>
-                            <li><a href="#" onclick="seekAudio(532)"><span class="timestamp">08:52</span> Sistem Pelatihan 3 Langkah</a></li>
-                            <li><a href="#" onclick="seekAudio(545)"><span class="timestamp">09:05</span> Prinsip Kemandirian & Kekuatan Pengakuan</a></li>
+                            <li><a href="#" onclick="seekAudio(664.6)"><span class="timestamp">11:04</span> Sistem Pelatihan 3 Langkah</a></li>
+                            <li><a href="#" onclick="seekAudio(675.7)"><span class="timestamp">11:15</span> Prinsip Kemandirian</a></li>
                         </ul>
-                        <li><a href="#" onclick="seekAudio(565)"><span class="timestamp">09:25</span> Kesimpulan & Penutup</a></li>
-                        <li><a href="#" onclick="seekAudio(640)"><span class="timestamp">10:40</span> Hafalan Kalimat Kunci (Mantra Sakti)</a></li>
+                        <li><a href="#" onclick="seekAudio(694.1)"><span class="timestamp">11:34</span> Kesimpulan & Penutup</a></li>
                          <ul class="sub-item">
-                            <li><a href="#" onclick="seekAudio(655)"><span class="timestamp">10:55</span> Kalimat Pembuka & Filter</a></li>
-                            <li><a href="#" onclick="seekAudio(681)"><span class="timestamp">11:21</span> Sikap Bertemu Apel Hijau</a></li>
-                            <li><a href="#" onclick="seekAudio(685)"><span class="timestamp">11:25</span> Kalimat Pivot Profesional</a></li>
-                            <li><a href="#" onclick="seekAudio(702)"><span class="timestamp">11:42</span> Kalimat Mengunci Komitmen</a></li>
-                            <li><a href="#" onclick="seekAudio(750)"><span class="timestamp">12:30</span> Kalimat Pembuka Konsultasi</a></li>
-                            <li><a href="#" onclick="seekAudio(764)"><span class="timestamp">12:44</span> Kalimat Mengukur Kesiapan</a></li>
-                            <li><a href="#" onclick="seekAudio(797)"><span class="timestamp">13:17</span> Metode Mengatasi Keberatan</a></li>
+                            <li><a href="#" onclick="seekAudio(721.8)"><span class="timestamp">12:01</span> Dua Pilar Utama</a></li>
+                            <li><a href="#" onclick="seekAudio(729.3)"><span class="timestamp">12:09</span> 3 Hal PENTING untuk Diingat</a></li>
+                        </ul>
+                        <li><a href="#" onclick="seekAudio(812.1)"><span class="timestamp">13:32</span> Hafalan Kalimat Kunci</a></li>
+                         <ul class="sub-item">
+                            <li><a href="#" onclick="seekAudio(817.1)"><span class="timestamp">13:37</span> Kalimat Pembuka & Filter</a></li>
+                            <li><a href="#" onclick="seekAudio(842.4)"><span class="timestamp">14:02</span> Sikap Bertemu Apel Hijau</a></li>
+                            <li><a href="#" onclick="seekAudio(847.2)"><span class="timestamp">14:07</span> Kalimat Pivot Profesional</a></li>
+                            <li><a href="#" onclick="seekAudio(864.4)"><span class="timestamp">14:24</span> Kalimat Mengunci Komitmen</a></li>
+                            <li><a href="#" onclick="seekAudio(910.6)"><span class="timestamp">15:10</span> Kalimat Pembuka Konsultasi</a></li>
+                            <li><a href="#" onclick="seekAudio(924)"><span class="timestamp">15:24</span> Kalimat Mengukur Kesiapan</a></li>
+                            <li><a href="#" onclick="seekAudio(949.6)"><span class="timestamp">15:49</span> Metode Mengatasi Keberatan (Trauma)</a></li>
                         </ul>
                     </ul>
                 </div>
